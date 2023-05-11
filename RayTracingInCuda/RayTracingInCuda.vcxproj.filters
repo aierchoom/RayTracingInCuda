@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Includes">
+      <UniqueIdentifier>{13e9ad9e-bcfb-49df-a0fc-9ef98f749761}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{8020abd1-415c-4180-a283-ea082a718b21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Includes\stb">
+      <UniqueIdentifier>{dd6c6daf-715a-4752-b562-fc9c09c8fb43}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="includes\cuda_helper.cuh">
+      <Filter>Includes</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\canvas.cuh">
+      <Filter>Includes</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\stb\stb_image_write.h">
+      <Filter>Includes\stb</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\stb\stb_image_resize.h">
+      <Filter>Includes\stb</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\stb\stb_image.h">
+      <Filter>Includes\stb</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ray.cuh" />
+    <ClInclude Include="includes\hitable.cuh" />
+    <ClInclude Include="includes\sphere.cuh" />
+    <ClInclude Include="includes\hitable_list.cuh" />
+    <ClInclude Include="includes\rtweekend.cuh" />
+    <ClInclude Include="includes\camera.cuh" />
+    <ClInclude Include="includes\material.cuh" />
+    <ClInclude Include="includes\vec3.cuh" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="source\main.cu">
+      <Filter>Source</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>
